@@ -42,12 +42,6 @@ main {
   justify-content: center;
   align-items: center;
 }
-.main-text {
-  max-width: 35rem;
-}
-.call-to-action {
-  min-width: 40rem;
-}
 .main-text, .call-to-action {
   padding: 0 1.8rem;
 }
@@ -58,26 +52,32 @@ main {
 }
 
 /* Main Text Section */
+.main-text {
+  max-width: 35rem;
+}
 h1 {
   font-size: 50px;
   font-weight: var(--bold);
   line-height: 1;
   padding-bottom: 2rem;
 }
-
 .main-text p {
   line-height: 1.5;
   font-size: var(--font-size);
 }
 
 /* Call To Action Section */
+.call-to-action {
+  min-width: 40rem;
+}
+
+/* Free Trial Button */
 .free-trial-button,
 .form-container {
   box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: .5rem;
 }
-
 .free-trial-button{
   background-color: var(--blue);
   font-size: var(--font-size);
@@ -86,27 +86,22 @@ h1 {
   margin-bottom: 1.5rem;
   width: 100%;
 }
-
 .free-trial-button:hover {
   filter: brightness(110%);
-}
-
-.free-trial-button:hover{
   cursor: pointer;
 }
 
+/* Form */
 .form-container {
   background-color: white;
   display: flex;
   flex-direction: column;
   padding: 2.5rem;
 }
-
 form {
   display: flex;
   flex-direction: column;
 }
-
 input {
   height: 3.5rem;
   border: 1px solid lightgrey;
@@ -114,20 +109,30 @@ input {
   color: grey;
   font-weight: var(--slightly-bolder);
   font-size: var(--font-size);
-  margin-bottom: 1.2rem;
+  margin-bottom: 1.5rem;
   width: 100%;
 }
-
-form .text-box {
+.text-box {
   text-indent: 35px;
 }
-
 input:focus {
   outline-color: var(--blue);
   caret-color: var(--blue);
   color: black;
 }
-
+.error-message {
+  color: var(--red);
+  display: none;
+  font-size: x-small;
+  font-style: italic;
+  font-weight: var(--slightly-bold);
+  margin-bottom: 1.5rem;
+  text-align: right;
+}
+.icon-error {
+  position: absolute;
+  right: 8%;
+}
 #submit-button {
   background-color: var(--green);
   border: none;
@@ -136,19 +141,17 @@ input:focus {
   font-size: var(--font-size);
   font-weight: var(--slightly-bolder);
   letter-spacing: 1px;
+  margin-bottom: 1rem;
   padding: 0 3rem;
 }
-
 #submit-button:hover {
-  filter: brightness(105%);
+  filter: brightness(107%);
 }
-
-.call-to-action p {
+.terms-and-services {
   color: var(--grayish-blue);
   font-size: x-small;
   text-align: center;
 }
-
 .bold-red {
   color: var(--red);
   font-weight: var(--bold);

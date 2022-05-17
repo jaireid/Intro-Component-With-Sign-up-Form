@@ -26,21 +26,29 @@
         <form>
           <label for="first-name">
             <input class="text-box" type="text" id="first-name" name="first-name" value="First Name">
+            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
+            <p class="error-message">First Name cannot be empty</p>
           </label>
           <label for="last-name">
             <input class="text-box" type="text" id="last-name" name="last-name" value="Last Name">
+            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
+            <p class="error-message">Last Name cannot be empty</p>
           </label>
           <label for="email">
             <input class="text-box" type="text" id="email" name="email" value="Email Address">
+            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
+            <p class="error-message">Looks like this is not an email</p>
           </label>
           <label for="password">
             <input class="text-box" type="text" id="password" name="password" value="Password">
+            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
+            <p class="error-message">Password cannot be empty</p>
           </label>
           <label for="submit-button">
             <input type="submit" id="submit-button" name="submit-button" value="CLAIM YOUR FREE TRIAL">
           </label>
         </form>
-        <p>By clicking the button, you are agreeing to our <span class="bold-red">Terms and Services</span></p>
+        <p class="terms-and-services">By clicking the button, you are agreeing to our <span class="bold-red">Terms and Services</span></p>
       </div>
     </section>
   </main>
