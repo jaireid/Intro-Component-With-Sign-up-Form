@@ -38,9 +38,16 @@ body {
 }
 main {
   min-height: 100vh;
+  margin: 0 5rem;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.main-text {
+  width: min(35rem, 50%);
+}
+.call-to-action {
+  min-width: 40rem;
 }
 .main-text, .call-to-action {
   padding: 0 1.8rem;
@@ -50,11 +57,22 @@ main {
 #submit-button {
   color: var(--white);
 }
+@media (max-width: 1250px) {
+  main {
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+  .main-text {
+    /* margin-bottom: 1rem; */
+    min-width: 30rem;
+    text-align: center;
+  }
+  .call-to-action {
+    max-width: 35rem;
+  }
+}
 
 /* Main Text Section */
-.main-text {
-  max-width: 35rem;
-}
 h1 {
   font-size: 50px;
   font-weight: var(--bold);
@@ -67,9 +85,6 @@ h1 {
 }
 
 /* Call To Action Section */
-.call-to-action {
-  min-width: 40rem;
-}
 
 /* Free Trial Button */
 .free-trial-button,
@@ -112,6 +127,16 @@ input {
   margin-bottom: 1.5rem;
   width: 100%;
 }
+/* .input-error {
+  height: 3.5rem;
+  border: 1px solid var(--red);
+  border-radius: 5px;
+  color: grey;
+  font-weight: var(--slightly-bolder);
+  font-size: var(--font-size);
+  margin-bottom: 1.5rem;
+  width: 100%;
+} */
 .text-box {
   text-indent: 35px;
 }
