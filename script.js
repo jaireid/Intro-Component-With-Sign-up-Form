@@ -1,8 +1,12 @@
 // Variables
-const freeTrialButton = document.getElementById("submit-button");
+const form = document.getElementById("form");
+const firstName = document.getElementById("first-name")
+const firstNameErrorMessage = document.getElementById("first-name-error")
 
 
-//
-freeTrialButton.addEventListener('click', () => {
-
+//Functions
+form.addEventListener('submit', (e) => {
+  if(firstName.value === "" || firstName.value === null) {
+    firstNameErrorMessage.className.add(".visiable");
+  }
 });

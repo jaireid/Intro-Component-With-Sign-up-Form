@@ -23,30 +23,28 @@
     <section class="call-to-action">
       <a href="#"><button class="free-trial-button"><strong>Try it free 7 days</strong> then $20/mo. thereafter</button></a>
       <div class="form-container">
-        <form>
+        <form id="form" action="/" method="GET">
           <label for="first-name">
             <input class="text-box" type="text" id="first-name" name="first-name" value="First Name">
-            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
-            <p class="error-message">First Name cannot be empty</p>
+            <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span>
+            <p id="first-name-error" class="error-message">First Name cannot be empty</p>
           </label>
           <label for="last-name">
             <input class="text-box" type="text" id="last-name" name="last-name" value="Last Name">
-            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
-            <p class="error-message">Last Name cannot be empty</p>
+            <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span>
+            <p id="last-name-error" class="error-message">Last Name cannot be empty</p>
           </label>
           <label for="email">
             <input class="text-box" type="text" id="email" name="email" value="Email Address">
-            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
-            <p class="error-message">Looks like this is not an email</p>
+            <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span>
+            <p id="email-name-error" class="error-message">Looks like this is not an email</p>
           </label>
           <label for="password">
             <input class="text-box" type="text" id="password" name="password" value="Password">
-            <!-- <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span> -->
-            <p class="error-message">Password cannot be empty</p>
+            <span><img src="/images/icon-error.svg" alt="error" class="icon-error"></span>
+            <p id="password-name-error" class="error-message">Password cannot be empty</p>
           </label>
-          <label for="submit-button">
-            <input type="submit" id="submit-button" name="submit-button" value="CLAIM YOUR FREE TRIAL">
-          </label>
+          <button type="submit" id="submit-button">CLAIM YOUR FREE TRIAL</button>
         </form>
         <p class="terms-and-services">By clicking the button, you are agreeing to our <span class="bold-red">Terms and Services</span></p>
       </div>
