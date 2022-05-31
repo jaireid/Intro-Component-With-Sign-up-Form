@@ -13,7 +13,8 @@
   --dark-blue: hsl(249, 10%, 26%);
   --grayish-blue: hsl(246, 25%, 77%);
   /* Font Size */
-  --font-size: 16px;
+  --font-size-regular: 16px;
+  --font-size-small: 14px;
   /* Font Family */
   --font-family: 'Poppins', sans-serif;
   /* Front Weights */
@@ -33,9 +34,9 @@
 }
 body {
   background-color: var(--red);
-  background-image: url("/images/bg-intro-desktop.png");
+  background-image: url("/images/bg-intro-mobile.png");
   font-family: var(--font-family);
-  font-size: var(--font-size)
+  font-size: var(--font-size-regular)
 }
 main {
   margin: 0 auto;
@@ -59,7 +60,7 @@ main {
   padding-bottom: 1rem;
 }
 .main-text p {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   line-height: 1.8;
 }
 
@@ -69,18 +70,18 @@ main {
   box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.2);
   border: none;
   border-radius: .5rem;
-  font-family: var(--font-family);
 }
 
 /* Free Trial Button */
 .free-trial-button{
   background-color: var(--blue);
   color: var(--white);
+  font-family: var(--font-family);
   font-size: var(--font-size);
   font-weight: 100;
-  height: 5rem;
   margin-bottom: 1.5rem;
   line-height: 1.5;
+  overflow-wrap: break-word;
   padding: 1rem 4rem;
   width: 100%;
 }
@@ -89,10 +90,71 @@ main {
   cursor: pointer;
 }
 
+/* Call To Action Section */
+
 /* Form */
 .form-container {
   background-color: white;
   display: flex;
   flex-direction: column;
-  padding: 2.5rem;
+  padding: 1.5rem;
+}
+.form-container label {
+  position: relative;
+}
+.form-container .text-box {
+  height: 3rem;
+  width: 100%;
+  border: 1px solid lightgrey;
+  border-radius: 5px;
+  color: grey;
+  font-family: var(--font-family);
+  font-weight: var(--slightly-bolder);
+  font-size: var(--font-size-small);
+  text-indent: 25px;
+}
+#last-name,
+#email,
+#password,
+#submit-button {
+  margin-top: 1rem;
+}
+.form-container .icon-error {
+  display: none;
+  position: absolute;
+}
+.form-container .error-message {
+  color: var(--red);
+  display: none;
+  font-size: 10px;
+  font-style: italic;
+  padding-top: .3rem;
+  text-align: right;
+}
+#submit-button {
+  background-color: var(--green);
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 4px 2px rgba(11, 153, 70, 0.76);
+  color: var(--white);
+  cursor: pointer;
+  font-size: var(--font-size-small);
+  font-weight: var(--slightly-bold);
+  letter-spacing: 1px;
+  padding: 1rem 2.5rem;
+  width: 100%;
+}
+#submit-button:hover {
+  filter: brightness(107%);
+}
+.terms-and-services {
+  color: var(--grayish-blue);
+  font-size: x-small;
+  margin-top: 1rem;
+  padding: 0 .5rem;
+  text-align: center;
+}
+.bold-red {
+  color: var(--red);
+  font-weight: var(--bold);
 }
