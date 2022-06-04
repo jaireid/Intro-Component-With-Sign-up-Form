@@ -1,5 +1,5 @@
 /* import Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
 
 /* Variables */
 :root {
@@ -16,7 +16,7 @@
   --font-size-regular: 16px;
   --font-size-small: 14px;
   /* Font Family */
-  --font-family: 'Poppins', sans-serif;
+  --font-family: "Poppins", sans-serif;
   /* Front Weights */
   --normal: 400;
   --slightly-bold: 500;
@@ -36,7 +36,7 @@ body {
   background-color: var(--red);
   background-image: url("/images/bg-intro-mobile.png");
   font-family: var(--font-family);
-  font-size: var(--font-size-regular)
+  font-size: var(--font-size-regular);
 }
 main {
   margin: 0 auto;
@@ -50,7 +50,7 @@ main {
 }
 
 /* Main Text Section */
-.main-text{
+.main-text {
   color: var(--white);
   padding-bottom: 3rem;
   text-align: center;
@@ -70,11 +70,11 @@ main {
 .form-container {
   box-shadow: 0px 8px 2px rgba(0, 0, 0, 0.2);
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 /* Free Trial Button */
-.free-trial-button{
+.free-trial-button {
   background-color: var(--blue);
   color: var(--white);
   font-family: var(--font-family);
@@ -102,11 +102,12 @@ main {
 }
 .form-container label {
   position: relative;
+  height: 3rem;
+  width: 100%;
 }
 .form-container .text-box {
   height: 3rem;
   width: 100%;
-  border: 1px solid lightgrey;
   border-radius: 5px;
   color: grey;
   font-family: var(--font-family);
@@ -115,7 +116,7 @@ main {
   padding: 1rem 0;
   text-indent: 25px;
 }
-input:focus {
+.text-box:focus {
   outline-color: var(--blue);
   caret-color: var(--blue);
   color: black;
@@ -127,15 +128,16 @@ input:focus {
   margin-top: 1rem;
 }
 .form-container .icon-error {
-  display: none;
   position: absolute;
+  top: 0;
+  left: 335px;
+  z-index: 5;
 }
 .form-container .error-message {
   color: var(--red);
-  display: none;
   font-size: 10px;
   font-style: italic;
-  padding-top: .3rem;
+  padding-top: 0.3rem;
   text-align: right;
 }
 #submit-button {
@@ -158,12 +160,21 @@ input:focus {
   color: var(--grayish-blue);
   font-size: x-small;
   margin-top: 1rem;
-  padding: 0 .5rem;
+  padding: 0 0.5rem;
   text-align: center;
 }
 .bold-red {
   color: var(--red);
   font-weight: var(--bold);
+}
+.hidden {
+  display: none;
+}
+.red-border {
+  border: 1px solid var(--red);
+}
+.grey-border {
+  border: 1px solid lightgrey;
 }
 
 /* Desktop Styles */
