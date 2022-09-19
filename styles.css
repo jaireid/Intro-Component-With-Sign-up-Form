@@ -34,7 +34,7 @@
 }
 body {
   background-color: var(--red);
-  background-image: url("/images/bg-intro-mobile.png");
+  background-image: url("/images/bgIntroMobile.png");
   font-family: var(--font-family);
   font-size: var(--font-size-regular);
 }
@@ -182,6 +182,9 @@ main {
   main {
     flex-direction: row;
     column-gap: 3rem;
+  }
+  body {
+    background-image: url("/images/bgIntroDesktop.png");
   }
   .main-text,
   .call-to-action {
