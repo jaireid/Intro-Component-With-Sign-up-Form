@@ -38,8 +38,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Links
 
-- Solution URL: [Intro Component With Sign-up Form Code](https://github.com/beareid/Intro-Component-With-Sign-up-Form.git)
-- Live Site URL: [Intro Component With Sign-up Form Site](https://beareid.github.io/Intro-Component-With-Sign-up-Form/)
+- Solution URL: [Intro Component With Sign-up Form Code](https://github.com/jaireid/Intro-Component-With-Sign-up-Form.git)
+- Live Site URL: [Intro Component With Sign-up Form Site](https://jaireid.github.io/Intro-Component-With-Sign-up-Form/)
 
 ## My process
 
@@ -61,5 +61,5 @@ I initially designed this site desktop-first and found it difficult to properly 
 
 ## Author
 
-- Website - [Bea Reid]
-- Frontend Mentor - [@beareid](https://www.frontendmentor.io/profile/beareid)
+- Website - [Jai Reid]
+- Frontend Mentor - [@jaireid](https://www.frontendmentor.io/profile/jaireid)
