@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+![Screenshot preview for the Intro component with sign up form coding challenge](./design/screenshot.png)
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
@@ -58,8 +58,3 @@ I initially designed this site desktop-first and found it difficult to properly 
 ### Useful resources
 
 - [Tailwind CSS Customizing Screens](https://tailwindcss.com/docs/screens) - This Tailwind CSS documentation about customizing screens helped me with learning breakpoints and how to use them in a project.
-
-## Author
-
-- Website - [Jai Reid]
-- Frontend Mentor - [@jaireid](https://www.frontendmentor.io/profile/jaireid)
